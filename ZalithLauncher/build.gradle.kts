@@ -226,6 +226,7 @@ tasks.register("generateInfoDistributor") {
 tasks.named("preBuild") {
     dependsOn("generateInfoDistributor")
 }
+
 dependencies {
     implementation("javax.annotation:javax.annotation-api:1.3.2")
     implementation("commons-codec:commons-codec:1.17.1")
@@ -265,4 +266,5 @@ dependencies {
     
     implementation("com.moandjiezana.toml:toml4j:0.7.2") {
         exclude(group = "com.google.code.gson", module = "gson")
-
+    } // Closes the toml4j exclude block
+} // Closes the dependencies block
