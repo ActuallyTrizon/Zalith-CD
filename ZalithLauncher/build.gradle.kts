@@ -265,5 +265,4 @@ dependencies {
     implementation("org.greenrobot:eventbus:3.3.1")
     
     implementation("com.moandjiezana.toml:toml4j:0.7.2")
-        exclude(group = "com.google.code.gson", module = "gson")
 }
