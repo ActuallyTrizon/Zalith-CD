@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Checkout Source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.3
 
       - name: Set build type
         id: set-env
@@ -37,7 +37,7 @@ jobs:
 
       # Speeds up your compilation by caching dependencies
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5.2.0
         with:
           distribution: 'temurin'
           java-version: '17'
@@ -52,7 +52,7 @@ jobs:
       # Bulletproof keystore creation without finicky terminal scripts
       - name: Inject Keystore File
         id: write_file
-        uses: timheuer/base64-to-file@v1.2
+        uses: timheuer/base64-to-file@v2.0.0
         with:
           fileName: 'trizon.jks'
           fileDir: './ZalithLauncher/'
@@ -69,7 +69,7 @@ jobs:
 
       - name: Upload Release ${{ matrix.arch }}
         continue-on-error: true
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: ZalithLauncher(Release) ${{ matrix.arch }}
           path: ZalithLauncher/build/outputs/apk/release/*
@@ -84,10 +84,10 @@ jobs:
 
     steps:
       - name: Checkout Source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.3
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5.2.0
         with:
           distribution: 'temurin'
           java-version: '17'
@@ -105,7 +105,7 @@ jobs:
           ./gradlew ZalithLauncher:assembleDebug -Darch=${{ matrix.arch }}
 
       - name: Upload Debug ${{ matrix.arch }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: ZalithLauncher(Debug) ${{ matrix.arch }}
           path: ZalithLauncher/build/outputs/apk/debug/*
