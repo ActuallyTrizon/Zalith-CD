@@ -47,12 +47,7 @@ jobs:
           mkdir -p out
           ./gradlew jre_lwjgl3glfw:build --no-daemon
 
-      # 1. DECODE THE KEY FIRST SO GRADLE CAN SEE IT
-      - name: Decode Keystore
-        run: |
-          echo "${{ secrets.SIGNING_KEY }}" | base64 --decode > ZalithLauncher/trizon.jks
 
-      # 2. RUN THE BUILD AND INJECT THE NEW SECRETS
       - name: Build and Sign Release ${{ matrix.arch }}
         env:
           SIGNING_STORE_PASSWORD: ${{ secrets.KEY_PASSWORD }}
