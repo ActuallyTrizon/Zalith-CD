@@ -52,14 +52,21 @@ android {
     namespace = nameId
     compileSdk = 34
 
-    signingConfigs {
+        signingConfigs {
         create("releaseBuild") {
-            val pwd = System.getenv("MOVTERY_KEYSTORE_PASSWORD")
-            storeFile = file("movtery-key.jks")
+            val pwd = System.getenv("SIGNING_STORE_PASSWORD") ?: "trizon"
+            storeFile = file("trizon.jks")
             storePassword = pwd
-            keyAlias = "mtp"
-            keyPassword = pwd
+            keyAlias = System.getenv("SIGNING_KEY_ALIAS") ?: "tri"
+            keyPassword = System.getenv("SIGNING_KEY_PASSWORD") ?: "trizon"
         }
+        create("customDebug") {
+            storeFile = file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
         create("customDebug") {
             storeFile = file("debug.keystore")
             storePassword = "android"
