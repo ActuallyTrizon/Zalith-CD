@@ -8,7 +8,7 @@ on:
 jobs:
   BuildRelease:
     if: github.repository_owner == 'ActuallyTrizon' && !startsWith(github.ref, 'refs/pull/') && github.ref_name == 'main'
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         arch: [ "all", "arm", "arm64", "x86", "x86_64" ]
@@ -52,7 +52,7 @@ jobs:
           MOVTERY_KEYSTORE_PASSWORD: ${{ secrets.MOVTERY_KEYSTORE_PASSWORD }}
         run: |
           chmod +x gradlew
-          ./gradlew ZalithLauncher:assemblerelease -Darch=${{ matrix.arch }}
+          ./gradlew ZalithLauncher:assembleRelease -Darch=${{ matrix.arch }}
 
       - name: Upload Release ${{matrix.arch}}
         continue-on-error: true
@@ -63,7 +63,7 @@ jobs:
 
   BuildDebug:
     if: startsWith(github.ref, 'refs/pull/') || github.ref_name != 'main'
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         arch: [ "all", "arm", "arm64", "x86", "x86_64" ]
