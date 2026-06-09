@@ -2,48 +2,61 @@
     <img width="256" src="ZalithLauncher/src/main/res/drawable/app_name_title.png"></img>
 </div>
 
+<h1 align="center">Zalith CD (Community Development)</h1>
+
 <div align="center">
 
-[![Android CI](https://github.com/ZalithLauncher/ZalithLauncher/actions/workflows/android.yml/badge.svg)](https://github.com/ZalithLauncher/ZalithLauncher/actions/workflows/android.yml)
-![Downloads](https://img.shields.io/github/downloads/ZalithLauncher/ZalithLauncher/total)
-[![Sponsor](https://img.shields.io/badge/sponsor-30363D?logo=GitHub-Sponsors)](https://afdian.com/a/MovTery)
+![Status](https://img.shields.io/badge/Project-Active%20Revival-blueviolet)
+![License](https://img.shields.io/github/license/ActuallyTrizon/ZalithLauncher?color=blue)
+![Platform](https://img.shields.io/badge/Platform-Android-green?logo=android)
 
 </div>
 
-- <a href="/README_ZH_CN.md">简体中文</a>丨<a href="/README-ZH_TW.md">繁體中文</a>
-- Zalith Launcher is a Minecraft launcher based on [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher) that runs [Minecraft: Java Edition](https://www.minecraft.net/) on Android devices.
-- Zalith Launcher aims to enhance user experience by redesigning the app interface, adding more practical features, and lowering the barrier to entry, making it easier for more people to enjoy Minecraft.
+---
 
-> [!WARNING]
-> Attention! This project is only a **community remake**, just like PojavLauncher is developed based on [Boardwalk](https://github.com/zhuowei/Boardwalk).  
-> We are planning to build the official website [zalithlauncher.cn](https://zalithlauncher.cn). Please note, our website domain ends with `.cn`, not `.com`! **That is not our site!** We do not participate in, accept, or trust that site! Please be careful to distinguish it and protect your personal privacy!
+### 🌟 Preserving the Roots, Built for the Future
 
-<h2 align="center">New Features</h2>
+**Zalith CD (Community Development)** is an open-source, community-driven revival and continuation of the original, abandoned Zalith Launcher. 
 
-- [x] Refactored app layout for improved aesthetics and usability.
-- [x] Built-in simple file manager to eliminate worries about Android permission restrictions!
-- [x] Better version management, customizable game directory location, allowing settings in external storage directories.
-- [x] Add more renderers, with support for renderer plugins!
-- [x] Download Mods, ModPacks, resource packs, saves, and shader packs directly within the launcher!
-- [x] Customizable virtual mouse icon and launcher background image.
-- [x] Light and dark themes available.
-- [x] And more features!
+Zalith Launcher is a Minecraft mobile utility based on [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher) that runs [Minecraft: Java Edition](https://www.minecraft.net/) on Android devices. It originally set out to lower the barrier to entry for mobile players by redesigning the interface and adding highly practical, built-in features.
+
+Now under active community development, the mission is simple: **preserve the classic foundation while refining it for modern devices.** As an active member of the mobile Minecraft community, this project is built from the ground up based directly on what real players want, need, and experience every day.
+
+> [!NOTE]
+> This project is an independent **community remake and revival**. It is no longer associated with any old legacy websites or the original, now-inactive development teams. 
+
+---
+
+<h2 align="center">Core Features</h2>
+
+- **Clean UI & Usability:** Refactored layout designed for aesthetics and smooth navigation.
+- **Built-in File Manager:** Access game files directly without fighting restrictive Android scoped storage permissions!
+- **Advanced Game Storage:** Custom game directory paths, allowing configurations on external storage.
+- **Renderer Extension:** Support for multiple renderers and renderer plugins.
+- **In-App Downloads:** Grab Mods, ModPacks, resource packs, world saves, and shader packs directly within the client.
+- **Deep Customization:** Fully customizable virtual mouse layouts, custom background scaling, and native Light/Dark themes.
+
+---
 
 <h2 align="center">Screenshots</h2>
 
-![Screenshot1](/.github/images/Screenshot_Launcher_Light_EN_US.jpg)
-![Screenshot2](/.github/images/Screenshot_Launcher_Dark_EN_US.jpg)
-![Screenshot3](/.github/images/Screenshot_Game_EN_US.jpg)
+<div align="center">
+    <p><em>Check the <code>.github/images/</code> folder to view UI previews.</em></p>
+</div>
+
+---
 
 <h2 align="center">License</h2>
 
-- Zalith Launcher is open source under the GPL v3 license.
+- **Zalith CD** remains strictly open source under the **GNU GPL v3** license.
 
-<h2 align="center">Special Thanks</h2>
+---
 
-This project uses several useful code libraries. Special thanks to them!
+<h2 align="center">Special Thanks & Lineage</h2>
 
-#### Code Libraries Used by PojavLauncher
+This continuation stands on the shoulders of incredible upstream open-source projects and libraries. 
+
+#### Code Libraries Inherited from PojavLauncher
 
 >- [Boardwalk](https://github.com/zhuowei/Boardwalk) (JVM Launcher): Unknown license / [Apache License 2.0](https://github.com/zhuowei/Boardwalk/blob/master/LICENSE) or GNU GPLv2.
 >- Android Support Library: [Apache License 2.0](https://android.googlesource.com/platform/prebuilts/maven_repo/android/+/master/NOTICE.txt).
@@ -57,9 +70,9 @@ This project uses several useful code libraries. Special thanks to them!
 >- [libepoxy](https://github.com/anholt/libepoxy): [MIT License](https://github.com/anholt/libepoxy/blob/master/COPYING).
 >- [virglrenderer](https://github.com/PojavLauncherTeam/virglrenderer): [MIT License](https://gitlab.freedesktop.org/virgl/virglrenderer/-/blob/master/COPYING).
 
-#### Additional Code Libraries Used by Zalith Launcher
+#### Additional Upstream Credits
 
->- [HMCL](https://github.com/HMCL-dev/HMCL) (uses some source code): [GPL-3.0 License](https://github.com/HMCL-dev/HMCL/blob/main/LICENSE)
->- [CommonMark](https://github.com/thephpleague/commonmark) (for rendering Markdown text): [BSD-3-Clause License](https://github.com/thephpleague/commonmark/blob/2.5/LICENSE)
->- [AndroidViewAnimations](https://github.com/daimajia/AndroidViewAnimations) (uses part of the animation source code): [MIT License](https://github.com/daimajia/AndroidViewAnimations/blob/master/License)
->- [TapTargetView](https://github.com/KeepSafe/TapTargetView) (for creating onboarding guides): [Apache License 2.0](https://github.com/KeepSafe/TapTargetView/blob/master/LICENSE)
+>- [HMCL](https://github.com/HMCL-dev/HMCL) (Shared logic source code): [GPL-3.0 License](https://github.com/HMCL-dev/HMCL/blob/main/LICENSE)
+>- [CommonMark](https://github.com/thephpleague/commonmark) (Markdown text rendering): [BSD-3-Clause License](https://github.com/thephpleague/commonmark/blob/2.5/LICENSE)
+>- [AndroidViewAnimations](https://github.com/daimajia/AndroidViewAnimations) (UI animation core elements): [MIT License](https://github.com/daimajia/AndroidViewAnimations/blob/master/License)
+>- [TapTargetView](https://github.com/KeepSafe/TapTargetView) (In-app UX onboarding guides): [Apache License 2.0](https://github.com/KeepSafe/TapTargetView/blob/master/LICENSE)
