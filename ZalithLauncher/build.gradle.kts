@@ -22,7 +22,7 @@ val getCFApiKey = {
 }
 
 val getBuildType = {
-    val buildType = System.getenv("ZL_BUILD_TYPE") ?: "DEBUG"
+    val buildType = System.getenv("ZL_BUILD_TYPE") ?: "RELEASE"
     logger.warn("BUILD: Build Type --> $buildType")
     buildType
 }
