@@ -28,6 +28,7 @@ val getBuildType = {
 }
 
 val nameId = "com.movtery.zalithlauncher"
+val appId = "com.trizon.zalithlauncher"
 val generatedZalithDir = file("$buildDir/generated/source/zalith/java")
 val launcherAPPName = project.findProperty("launcher_app_name") as? String ?: error("The \"launcher_app_name\" property is not set in gradle.properties.")
 val launcherName = project.findProperty("launcher_name") as? String ?: error("The \"launcher_name\" property is not set in gradle.properties.")
@@ -53,7 +54,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = nameId
+        applicationId = appId
         minSdk = 26
         targetSdk = 34
         versionCode = launcherVersionCode
@@ -63,7 +64,7 @@ android {
     }
 
     buildTypes {
-        val storageProviderId = "$nameId.storage_provider"
+        val storageProviderId = "$appId.storage_provider"
 
         getByName("debug") {
             applicationIdSuffix = ".debug"
