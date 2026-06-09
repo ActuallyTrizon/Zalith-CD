@@ -28,7 +28,7 @@ val getBuildType = {
 }
 
 val nameId = "com.movtery.zalithlauncher"
-val appId = "com.trizon.zalithlauncher"
+val appId = "com.trizon.zalith"
 val generatedZalithDir = file("$buildDir/generated/source/zalith/java")
 val launcherAPPName = project.findProperty("launcher_app_name") as? String ?: error("The \"launcher_app_name\" property is not set in gradle.properties.")
 val launcherName = project.findProperty("launcher_name") as? String ?: error("The \"launcher_name\" property is not set in gradle.properties.")
