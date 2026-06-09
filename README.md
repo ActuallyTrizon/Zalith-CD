@@ -2,7 +2,7 @@
     <img width="256" src="ZalithLauncher/src/main/res/drawable/app_name_title.png"></img>
 </div>
 
-<h1 align="center">Zalith CD </h1>
+<h1 align="center">Anew </h1>
 
 <div align="center">
 
