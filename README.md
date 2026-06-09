@@ -14,15 +14,15 @@
 
 ---
 
-### 🚀 Preserving the Roots, Built for the Future
+### 🚀 Updating the Past
 
-**Zalith CD (Community Development)** is an open-source, community-driven revival and continuation of the original, abandoned Zalith Launcher.
+**Zalith CD (Community Development)** is an open source, community driven revival and continuation of the original, archived Zalith Launcher.
 
 - Please note I am just learning.
 
 Zalith Launcher is a Minecraft mobile utility based on [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher) that runs [Minecraft: Java Edition](https://www.minecraft.net/) on Android devices. It originally set out to lower the barrier to entry for mobile players by redesigning the interface and adding highly practical, built-in features.
 
-Now under active community development, the mission is simple: **preserve the classic foundation while refining it for modern devices.** As an active member of the mobile Minecraft community, this project is built from the ground up based directly on what real players want, need, and experience every day.
+Now under active community development, the mission is simple: **preserve the classic foundation while refining it.** As an active member of the mobile Minecraft community, I was scared about using a vintage launcher, so I took it upon myself to update it.
 
 > [!NOTE]
 > This project is an independent **community remake and revival**. It is no longer associated with any old legacy websites or the original, now-inactive development teams. 
@@ -31,21 +31,18 @@ Now under active community development, the mission is simple: **preserve the cl
 
 <h2 align="center">Core Features</h2>
 
-- **Clean UI & Usability:** Refactored layout designed for aesthetics and smooth navigation.
-- **Built-in File Manager:** Access game files directly without fighting restrictive Android scoped storage permissions!
+- **Clean UI & Usability:** layout designed for simplicity and smooth navigation.
+- **Built in File Manager:** Access game files directly without fighting restrictive Android scoped storage permissions!
 - **Simple Game Storage:** Custom game directory paths, allowing configurations on external storage.
-- **Renderer Extension:** Support for multiple renderers and renderer plugins.
-- **In-App Downloads:** Grab Mods, ModPacks, resource packs, world saves, and shader packs directly within the client.
-- **Deep Customization:** Fully customizable virtual mouse layouts, custom background scaling, and native Light/Dark themes.
+- **Plugins** Support for multiple renderers and renderer plugins and drivers.
+- **In App Downloads:** Install Mods, Modpacks, Mesourcepacks, Worlds and Shaderpacks directly within Zalith.
+-[X] **Layout Customization:** Fully customizable virtual mouse layouts, custom background scaling and native Light/Dark themes.
 
 ---
-
-<h2 align="center">Screenshots</h2>
-
-<div align="center">
-    <p><em>Check the <code>.github/images/</code> folder to view UI previews.</em></p>
-</div>
-
+### Previews
+![screenshot_1](image_1.png)
+![screenshot_2](image_2.png)
+![screenshot_3](image_3.png)
 ---
 
 <h2 align="center">License</h2>
