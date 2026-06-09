@@ -2,7 +2,7 @@
     <img width="256" src="ZalithLauncher/src/main/res/drawable/app_name_title.png"></img>
 </div>
 
-<h1 align="center">Zalith CD (Community Development)</h1>
+<h1 align="center">Zalith CD </h1>
 
 <div align="center">
 
@@ -14,9 +14,11 @@
 
 ---
 
-### 🌟 Preserving the Roots, Built for the Future
+### 🚀 Preserving the Roots, Built for the Future
 
-**Zalith CD (Community Development)** is an open-source, community-driven revival and continuation of the original, abandoned Zalith Launcher. 
+**Zalith CD (Community Development)** is an open-source, community-driven revival and continuation of the original, abandoned Zalith Launcher.
+
+- Please note I am just learning.
 
 Zalith Launcher is a Minecraft mobile utility based on [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher) that runs [Minecraft: Java Edition](https://www.minecraft.net/) on Android devices. It originally set out to lower the barrier to entry for mobile players by redesigning the interface and adding highly practical, built-in features.
 
@@ -31,7 +33,7 @@ Now under active community development, the mission is simple: **preserve the cl
 
 - **Clean UI & Usability:** Refactored layout designed for aesthetics and smooth navigation.
 - **Built-in File Manager:** Access game files directly without fighting restrictive Android scoped storage permissions!
-- **Advanced Game Storage:** Custom game directory paths, allowing configurations on external storage.
+- **Simple Game Storage:** Custom game directory paths, allowing configurations on external storage.
 - **Renderer Extension:** Support for multiple renderers and renderer plugins.
 - **In-App Downloads:** Grab Mods, ModPacks, resource packs, world saves, and shader packs directly within the client.
 - **Deep Customization:** Fully customizable virtual mouse layouts, custom background scaling, and native Light/Dark themes.
@@ -54,7 +56,7 @@ Now under active community development, the mission is simple: **preserve the cl
 
 <h2 align="center">Special Thanks & Lineage</h2>
 
-This continuation stands on the shoulders of incredible upstream open-source projects and libraries. 
+This continuation stands on the shoulders of incredible upstream open source projects and libraries. 
 
 #### Code Libraries Inherited from PojavLauncher
 
