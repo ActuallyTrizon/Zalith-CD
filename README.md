@@ -16,7 +16,7 @@
 
 ### 🚀 Updating the Past
 
-**Zalith CD (Community Development)** is an open source, community driven revival and continuation of the original, archived Zalith Launcher.
+**Zalith CD (Community Development)** is an open source, community driven revival and continuation of Zalith Launcher.
 
 - Please note I am just learning.
 
@@ -31,12 +31,15 @@ Now under active community development, the mission is simple: **preserve the cl
 
 <h2 align="center">Core Features</h2>
 
-- **Clean UI & Usability:** layout designed for simplicity and smooth navigation.
-- **Built in File Manager:** Access game files directly without fighting restrictive Android scoped storage permissions!
-- **Simple Game Storage:** Custom game directory paths, allowing configurations on external storage.
-- **Plugins** Support for multiple renderers and renderer plugins and drivers.
-- **In App Downloads:** Install Mods, Modpacks, Mesourcepacks, Worlds and Shaderpacks directly within Zalith.
--[X] **Layout Customization:** Fully customizable virtual mouse layouts, custom background scaling and native Light/Dark themes.
+* [x] Layout designed for simplicity and smooth navigation.
+* [x] Access game files directly without being restricted by Android's scoped storage.
+* [x] Game directory paths, allowing configurations on external storage.
+* [x] Support for multiple renderers and renderer plugins and drivers.
+* [x] Install Mods, Modpacks, Mesourcepacks, Worlds and Shaderpacks directly within Zalith.
+* [x] Fully customizable virtual mouse layouts, custom background scaling and native Light/Dark themes.
+* [ ] More features.
+* [ ] OpenGL toggle for 26.2+
+* [ ] Updating components.
 
 ---
 ### Previews
