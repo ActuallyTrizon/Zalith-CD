@@ -23,7 +23,7 @@ jobs:
       - name: Set build type
         run: |
           COMMIT_MSG="${{ github.event.head_commit.message }}"
-          BUILD_TYPE="DEBUG"
+          BUILD_TYPE="RELEASE"
 
           if [[ "$COMMIT_MSG" == *"pre-release"* ]]; then
             BUILD_TYPE="PRE_RELEASE"
