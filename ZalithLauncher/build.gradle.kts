@@ -52,29 +52,13 @@ android {
     namespace = nameId
     compileSdk = 34
 
-    signingConfigs {
-        create("releaseBuild") {
-            val pwd = System.getenv("SIGNING_STORE_PASSWORD") ?: "trizon"
-            storeFile = file("trizon.jks")
-            storePassword = pwd
-            keyAlias = System.getenv("SIGNING_KEY_ALIAS") ?: "tri"
-            keyPassword = System.getenv("SIGNING_KEY_PASSWORD") ?: "trizon"
-        }
-        create("customDebug") {
-            storeFile = file("debug.keystore")
-            storePassword = "android"
-            keyAlias = "androiddebugkey"
-            keyPassword = "android"
-        }
-    }
-
     defaultConfig {
         applicationId = nameId
         minSdk = 26
         targetSdk = 34
         versionCode = launcherVersionCode
         versionName = launcherVersionName
-        multiDexEnabled = true
+        multiDexEnabled = true //important
         manifestPlaceholders["launcher_name"] = launcherAPPName
     }
 
@@ -86,7 +70,6 @@ android {
             isMinifyEnabled = false
             isShrinkResources = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = signingConfigs.getByName("customDebug")
             resValue("string", "storageProviderAuthorities", "$storageProviderId.debug")
         }
         create("proguard") {
@@ -99,10 +82,10 @@ android {
             isDebuggable = false
         }
         getByName("release") {
+            // Don't set to true or java.awt will be a.a or something similar.
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
             resValue("string", "storageProviderAuthorities", storageProviderId)
-            signingConfig = signingConfigs.getByName("releaseBuild")
         }
     }
 
@@ -230,6 +213,7 @@ tasks.named("preBuild") {
 dependencies {
     implementation("javax.annotation:javax.annotation-api:1.3.2")
     implementation("commons-codec:commons-codec:1.17.1")
+    // implementation("com.wu-man:android-bsf-api:3.1.3")
     implementation("androidx.drawerlayout:drawerlayout:1.2.0")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta01")
     implementation("androidx.annotation:annotation:1.7.0")
@@ -248,10 +232,19 @@ dependencies {
     implementation("com.github.angcyo.DslTablayout:TabLayout:3.6.5")
 
     implementation("com.github.megatronking.stringfog:xor:5.0.0")
+
     implementation("top.fifthlight.touchcontroller:proxy-client-android:0.0.2")
+
+    // implementation("com.intuit.sdp:sdp-android:1.0.5")
+    // implementation("com.intuit.ssp:ssp-android:1.0.5")
+
     implementation("org.tukaani:xz:1.9")
+    // Our version of exp4j can be built from source at
+    // https://github.com/PojavLauncherTeam/exp4j
     implementation("net.sourceforge.htmlcleaner:htmlcleaner:2.6.1")
     implementation("com.bytedance:bytehook:1.0.10")
+
+    // implementation("net.sourceforge.streamsupport:streamsupport-cfuture:1.7.0")
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar", "*.aar"))))
 
@@ -263,7 +256,7 @@ dependencies {
     implementation("com.getkeepsafe.taptargetview:taptargetview:1.14.0")
     implementation("io.github.petterpx:floatingx:2.3.3")
     implementation("org.greenrobot:eventbus:3.3.1")
-    
-    implementation("com.moandjiezana.toml:toml4j:0.7.2")
-    { exclude(group = "com.google.code.gson", module = "gson") }
+    implementation("com.moandjiezana.toml:toml4j:0.7.2") {
+        exclude(group = "com.google.code.gson", module = "gson")
+    }
 }
