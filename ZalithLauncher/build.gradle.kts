@@ -87,6 +87,7 @@ android {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
             resValue("string", "storageProviderAuthorities", storageProviderId)
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
 
@@ -261,3 +262,4 @@ dependencies {
         exclude(group = "com.google.code.gson", module = "gson")
     }
 }
+ 
