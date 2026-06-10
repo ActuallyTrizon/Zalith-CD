@@ -52,6 +52,6 @@ jobs:
       - name: Upload Release ${{ matrix.arch }}
         uses: actions/upload-artifact@v7.0.1
         with:
-          name: ZalithLauncher-Release-${{ matrix.arch }}
+          name: Zalith-Release-${{ matrix.arch }}
           path: ZalithLauncher/build/outputs/apk/release/*.apk
           if-no-files-found: warn
