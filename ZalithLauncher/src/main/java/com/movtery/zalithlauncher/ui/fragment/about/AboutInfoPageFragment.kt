@@ -82,12 +82,20 @@ class AboutInfoPageFragment() : Fragment(R.layout.fragment_about_info_page) {
     @SuppressLint("UseCompatLoadingForDrawables")
     private fun loadAboutData(resources: Resources) {
         mAboutData.clear()
-
+        
+        mAboutData.add(
+            AboutItemBean(
+                 resources.getDrawable(R.drawable.trizon, requireContext().theme),
+                "Trizon",
+                "The Developer of Zalith CD",
+                AboutItemButtonBean(requireActivity(), "Access Page", "https://github.com/ActuallyTrizon")
+           )
+       )
         mAboutData.add(
             AboutItemBean(
                 resources.getDrawable(R.drawable.ic_pojav_full, requireContext().theme),
                 "PojavLauncherTeam",
-                getString(R.string.about_PojavLauncher_desc),
+                "The Original Team",
                 AboutItemButtonBean(requireActivity(), "Github", "https://github.com/PojavLauncherTeam/PojavLauncher")
             )
         )
@@ -95,7 +103,7 @@ class AboutInfoPageFragment() : Fragment(R.layout.fragment_about_info_page) {
             AboutItemBean(
                 resources.getDrawable(R.drawable.image_about_movtery, requireContext().theme),
                 "墨北MovTery",
-                getString(R.string.about_MovTery_desc),
+                "Former Developer of Zalith launcher",
                 AboutItemButtonBean(
                     requireActivity(),
                     getString(R.string.about_access_space),
