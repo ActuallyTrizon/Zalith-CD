@@ -26,9 +26,6 @@ class AllSettings {
         val ignoreNotchLauncher = BooleanSettingUnit("ignoreNotchLauncher", true)
 
         @JvmStatic
-        val forceOpenGl = BooleanSettingUnit("forceOpenGl", false)
-
-        @JvmStatic
         val resolutionRatio = IntSettingUnit("resolutionRatio", 100)
 
         @JvmStatic
@@ -45,6 +42,9 @@ class AllSettings {
 
         @JvmStatic
         val zinkPreferSystemDriver = BooleanSettingUnit("zinkPreferSystemDriver", false)
+
+        @JvmStatic
+        val forceOpenGl = BooleanSettingUnit("forceOpenGl", false)
 
         // Control
         @JvmStatic
