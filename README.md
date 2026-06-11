@@ -43,8 +43,8 @@ Now under active community development, the mission is simple: **preserve the fo
 ---
 ### Previews
 ![screenshot 1](.github/images/screenshot_1.png)
-![screenshot 2](screenshot_2.png)
-![screenshot 3](screenshot_3.png)
+![screenshot 2](.github/images/screenshot_2.png)
+![screenshot 3](.github/images/screenshot_3.png)
 ---
 
 <h2 align="center">License</h2>
