@@ -2,8 +2,6 @@
     <img width="256" src="ZalithLauncher/src/main/res/drawable/app_name_title.png"></img>
 </div>
 
-<h1 align="center">CD</h1>
-
 <div align="center">
 
 ![Status](https://img.shields.io/badge/Project-Active%20Revival-blueviolet)
