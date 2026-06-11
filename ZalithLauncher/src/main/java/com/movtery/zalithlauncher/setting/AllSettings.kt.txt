@@ -42,7 +42,7 @@ class AllSettings {
 
         @JvmStatic
         val zinkPreferSystemDriver = BooleanSettingUnit("zinkPreferSystemDriver", false)
-
+        
         // Control
         @JvmStatic
         val disableGestures = BooleanSettingUnit("disableGestures", false)
