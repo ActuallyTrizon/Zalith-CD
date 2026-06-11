@@ -544,6 +544,8 @@
     <string name="setting_game_menu_alpha_desc">Set the opacity of the game menu floating window</string>
     <string name="setting_reboot_tip">This setting has been changed, but requires the app to be restarted to take effect!</string>
     <string name="setting_zink_driver_adreno">The launcher detected that your device has an Adreno GPU. Enabling this option may cause the Zink renderer to malfunction. Are you sure you want to enable this option?</string>
+    <string name="setting_force_opengl_title">Force OpenGL (26.2+)</string>
+    <string name="setting_force_opengl_desc">Forces OpenGL instead of Vulkan. Fixes crashes on 26.2 and above which default to Vulkan on Android.</string>
     <!-- Game -->
     <string name="game_exit_message">The application/game exited with code %d.</string>
     <string name="game_singnal_message">The application/game aborted due to fatal signal %d.</string>
