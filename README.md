@@ -2,30 +2,29 @@
     <img width="256" src="ZalithLauncher/src/main/res/drawable/app_name_title.png"></img>
 </div>
 
-<h1 align="center">Revived </h1>
+<h1 align="center">CD</h1>
 
 <div align="center">
 
 ![Status](https://img.shields.io/badge/Project-Active%20Revival-blueviolet)
-![License](https://img.shields.io/github/license/ActuallyTrizon/ZalithLauncher?color=blue)
 ![Platform](https://img.shields.io/badge/Platform-Android-green?logo=android)
 
 </div>
 
 ---
 
-### 🚀 Updating the Past
+### 🚀 Maintaining Zalith
 
 **Zalith CD (Community Development)** is an open source, community driven revival and continuation of Zalith Launcher.
 
 - Please note I am just learning.
 
-Zalith Launcher is a Minecraft mobile utility based on [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher) that runs [Minecraft: Java Edition](https://www.minecraft.net/) on Android devices. It originally set out to lower the barrier to entry for mobile players by redesigning the interface and adding highly practical, built-in features.
+Zalith Launcher is a Minecraft launcher based on [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher) that runs [Minecraft: Java Edition](https://www.minecraft.net/) on Android devices. It originally set out to lower the barrier to entry for mobile players by redesigning the interface and adding highly practical, builtin features.
 
-Now under active community development, the mission is simple: **preserve the classic foundation while refining it.** As an active member of the mobile Minecraft community, I was scared about using a vintage launcher, so I took it upon myself to update it.
+Now under active community development, the mission is simple: **preserve the foundation while refining it.** As an active member of the mobile Minecraft community, I was scared about using a vintage launcher, so I took it upon myself to update it.
 
 > [!NOTE]
-> This project is an independent **community remake and revival**. It is no longer associated with any old legacy websites or the original, now-inactive development teams. 
+> This project is an independent **community remake and revival**. It is no longer associated with websites or the original original developers.
 
 ---
 
@@ -37,8 +36,8 @@ Now under active community development, the mission is simple: **preserve the cl
 * [x] Support for multiple renderers and renderer plugins and drivers.
 * [x] Install Mods, Modpacks, Mesourcepacks, Worlds and Shaderpacks directly within Zalith.
 * [x] Fully customizable virtual mouse layouts, custom background scaling and native Light/Dark themes.
+* [x] Force OpenGL for 26.2.
 * [ ] More features.
-* [ ] OpenGL toggle for 26.2+
 * [ ] Updating components.
 
 ---
