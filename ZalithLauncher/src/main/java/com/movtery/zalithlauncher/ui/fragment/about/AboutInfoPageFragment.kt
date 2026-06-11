@@ -93,6 +93,18 @@ class AboutInfoPageFragment() : Fragment(R.layout.fragment_about_info_page) {
         )
         mAboutData.add(
             AboutItemBean(
+                resources.getDrawable(R.drawable.image_about_trizon, requireContext().theme),
+                "Trizon",
+                getString(R.string.about_Trizon_desc),
+                AboutItemButtonBean(
+                    requireActivity(),
+                    "Github",
+                    "https://github.com/ActuallyTrizon"
+                )
+            )
+        )
+        mAboutData.add(
+            AboutItemBean(
                 resources.getDrawable(R.drawable.image_about_movtery, requireContext().theme),
                 "墨北MovTery",
                 getString(R.string.about_MovTery_desc),
@@ -159,18 +171,6 @@ class AboutInfoPageFragment() : Fragment(R.layout.fragment_about_info_page) {
                     requireActivity(),
                     getString(R.string.about_button_support_development),
                     "https://afdian.com/a/bangbang93"
-                )
-            )
-        )
-        mAboutData.add(
-            AboutItemBean(
-                resources.getDrawable(R.drawable.image_about_trizon, requireContext().theme),
-                "Trizon",
-                getString(R.string.about_Trizon_desc),
-                AboutItemButtonBean(
-                    requireActivity(),
-                    "Github",
-                    "https://github.com/ActuallyTrizon"
                 )
             )
         )
