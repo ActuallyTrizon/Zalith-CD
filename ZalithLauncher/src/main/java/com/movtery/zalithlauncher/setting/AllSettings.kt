@@ -26,6 +26,9 @@ class AllSettings {
         val ignoreNotchLauncher = BooleanSettingUnit("ignoreNotchLauncher", true)
 
         @JvmStatic
+        val forceOpenGl = BooleanSettingUnit("forceOpenGl", false)
+
+        @JvmStatic
         val resolutionRatio = IntSettingUnit("resolutionRatio", 100)
 
         @JvmStatic
